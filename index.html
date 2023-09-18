@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mathematic</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <nav class="navigation">
+                <ul class="navigation_list">
+                    <li class="navigation_list__item">
+                        <a href="#cuprum">Количество лигатуры</a>
+                    </li>
+                    <li class="navigation_list__item">
+                        <a href="#pripoy">Cu and Ca для припоя</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="header_title">Программа рачета для серебра 925-й пробы</h1>
+        </header>
+        <main>
+            <section class="container silver-proba" id="cuprum">
+                <h2 class="title">Рачет Серебро 925</h2>
+                <form class="form-calculate" action="#" method="post">
+                    <div class="form_section">
+                        <p class="mass">Введите массу 999-й пробы:</p>
+                        <input id="metall999" type="text" />
+                    </div>
+                    <button id="calculate">Calculate</button>
+                </form>
+                <section class="result unshow">
+                    <h3>Медь</h3>
+                    <div id="result">
+    
+                    </div>
+                </section>
+                <a class="back-btn" href="#header">
+                    back
+                </a>
+            </section>
+            <section class="container silver-pripoy" id="pripoy">
+                <h2 class="title">Рачет для Серебрянного припоя</h2>
+                <form class="form-calculate" action="#" method="post">
+                    <div class="form_section">
+                        <p class="mass">Введите массу 999-й пробы:</p>
+                        <input id="metall999-pripoy" type="text" />
+                    </div>
+                    <button id="calculate-pripoy">Calculate</button>
+                </form>
+                <section class="result-pripoy unshow">
+                    <h3>Медь:</h3>
+                    <div id="result-cuprum">
+    
+                    </div>
+                    <h3>Кадмий:</h3>
+                    <div id="result-cadmiy">
+    
+                    </div>
+                </section>
+                <a class="back-btn" href="#header">
+                    back
+                </a>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
